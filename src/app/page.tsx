@@ -1,5 +1,7 @@
 "use client";
 
+import Landing from "@/components/HomeLanding/Landing";
+import PredictForm from "@/components/HomeLanding/PredictForm";
 import PostPredict from "@/components/PredictData";
 import TodoForm from "@/components/TodoForm";
 import TodoItem from "@/components/TodoItem";
@@ -15,17 +17,9 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="container mx-auto max-w-md p-4">
-      <TodoForm />
-      <h1 className="text-2xl font-bold mb-4">Todo List</h1>
-      {todos.length === 0 ? (
-        <p className="text-center">No Todos Found</p>
-      ) : (
-        todos.map((todo) => <TodoItem key={todo.id} todo={todo} />)
-      )}
-      <div>
-        <PostPredict/>
-      </div>
+    <div className="container mx-auto max-w-md p-4 space-y-4 flex    flex-col  h-full  ">
+        <Landing/>
+        <PredictForm/>
     </div>
   );
 };
