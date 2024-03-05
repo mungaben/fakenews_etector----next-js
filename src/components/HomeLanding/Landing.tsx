@@ -6,7 +6,7 @@ const Landing = () => {
             <div>
                 <h1 className=' flex justify-center items-center font-extrabold lg:text-3xl md:text-3xl sm:text-xl text-sm  '>
                     <strong className=' tracking-wider leading-10 font-mono'>
-                        Connect. Learn. Earn
+                        Connect. Predict. Examine
                     </strong>
                 </h1>
                 <p className=' font-thin text-sm  text-center max-w-sm subpixel-antialiased md:text-balance'>
